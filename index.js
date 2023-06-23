@@ -10,9 +10,11 @@ let message = "";
 //let sumEl = document.getElementById("sum-el");
 let sumEl = document.querySelector(".sum-el");
 let messageEl = document.getElementById("message-el");
+let cardEl = document.getElementById("cards-el");
 
 function startGame() {
   //sumEl.innerText = "Sum: " + sum;
+  cardEl.textContent = "Cards: " + firstCard + " " + secondCard;
   sumEl.textContent = "Sum: " + sum;
   if (sum <= 20) {
     message = "Do you want to draw a new card?";
